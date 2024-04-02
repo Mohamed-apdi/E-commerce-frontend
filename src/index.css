@@ -95,6 +95,9 @@ a{
     --color-3b4149 :#3b4149;
     --color-febd69: #febd69;
     --color-232f3e: #232f3e;
+    --color-f5f5f7: #f5f5f7;
+    --color-edededed: #edededed;
+    
 }
 
 /* header part  */
@@ -143,8 +146,8 @@ a{
 .dropdown button:hover{
  background: var(--color-232f3e );
 }
-.header-bottom .dropdown button::before {
-  content: url(./assets//images/menu.svg);
+.header-bottom .dropdown .btn-menu::before {
+  content: url(./Public/images/menu.svg);
 }
 
 /* header end  */
@@ -158,8 +161,93 @@ footer {
   color: #fff;
 }
 
+
 footer:not(:first-child) {
   border-top: 1px solid rgba(255,255,255,0.1);
 }
-
+.input-btn {
+  background: var(--color-232f3e);
+}
 /* footer end  */
+
+
+/* home section start  */
+/* Home wrapper 1 start */
+.Home-wrapper-1 .main-btn {
+  position: relative;
+  transition: padding 0.3s ease;
+}
+.Home-wrapper-1 .main-btn:hover {
+  padding-right: 32px; /* Add space between text and arrow */
+}
+.Home-wrapper-1 .arrow-icon {
+  position: absolute;
+  top: 50%;
+  right:10px; /* Adjust as needed */
+  transform: translateY(-50%);
+  display: none;
+  width: 16px; /* Adjust size as needed */
+  height: auto;
+}
+
+.Home-wrapper-1 .main-btn:hover .arrow-icon {
+  display: inline-block;
+}
+
+/* If you want to change the size of the button on hover */
+.Home-wrapper-1 .main-btn:hover {
+  transform: scale(1.05); /* Adjust scale as needed */
+}
+
+/* Add transitions for smooth animation */
+.Home-wrapper-1 .main-btn,
+.main-btn .arrow-icon {
+  transition: all 0.3s ease;
+}
+/* Home wrapper 1 end */
+
+
+/* Homw wrpper 2 start */
+.Home-wrapper-2 {
+  background: var(--color-f5f5f7);
+}
+/* Homw wrpper 2 end */
+
+/* categories section start  */
+
+.categories {
+  background: white;
+  box-shadow: 0 0 10px #0000001a;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.categories > div {
+  width: 20%;
+  padding: 0px 10px;
+}
+.categories > div>div{
+  width: 70%;
+}
+.categories > div:nth-child(1),
+.categories > div:nth-child(2),
+.categories > div:nth-child(3),
+.categories > div:nth-child(4), 
+  .categories > div:nth-child(5) {
+  border-bottom: 1.5px solid var(--color-edededed);
+}
+
+.categories > div:nth-child(1),
+.categories > div:nth-child(2),
+.categories > div:nth-child(3),
+.categories > div:nth-child(4) {
+  border-right: 1.5px solid var(--color-edededed);
+}
+.categories > div:nth-child(6),
+.categories > div:nth-child(7),
+.categories > div:nth-child(8),
+.categories > div:nth-child(9) {
+  border-right: 1.5px solid var(--color-edededed);
+}
+/* categories section end  */
+/* home section end */
