@@ -29,11 +29,11 @@ function Footer() {
         <div className=" w-4/5">
           <h4 className="mb-4 font-bold">Contact Us</h4>
           <div>
-            <address>
+            <address className=" text-xs">
               BN: 000 Near KM4, Hoddan <br />
               Mogadishu - Somalia
               <br />
-              Postcode: 00000
+              Postcode: 0252
               </address>
               <a href="tel:+252 617182497">+252 617182497</a>
               <br />
@@ -51,11 +51,11 @@ function Footer() {
           <h4 className="mb-4 font-bold">Information</h4>
           <div>
             <ul>
-            <li><Link className=" hover:underline text-[14px]">Privacy Policy</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Refund Policy</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Shipping Policy</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Terms & Conditions</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Blogs</Link></li>
+            <li><Link to="/privacy-policy" className=" hover:underline text-[14px]">Privacy Policy</Link></li>
+            <li><Link to="/refund-policy" className=" hover:underline text-[14px]">Refund Policy</Link></li>
+            <li><Link to="/shipping-policy" className=" hover:underline text-[14px]">Shipping Policy</Link></li>
+            <li><Link to="/terms-conditions" className=" hover:underline text-[14px]">Terms & Conditions</Link></li>
+            <li><Link to="/blog" className=" hover:underline text-[14px]">Blogs</Link></li>
             </ul>
           </div>
         </div>
@@ -63,9 +63,9 @@ function Footer() {
           <h4 className="mb-4 font-bold">Account</h4>
           <div>
             <ul>
-            <li><Link className=" hover:underline text-[14px]">About Us</Link></li>
-            <li><Link className=" hover:underline text-[14px]">FAQ</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Contact</Link></li>
+            <li><Link to="/about" className=" hover:underline text-[14px]">About Us</Link></li>
+            <li><Link to="/faq" className=" hover:underline text-[14px]">FAQ</Link></li>
+            <li><Link to="/contact" className=" hover:underline text-[14px]">Contact</Link></li>
             </ul>
           </div>
         </div>
@@ -73,11 +73,11 @@ function Footer() {
           <h4 className="mb-4 font-bold">Quick Links</h4>
           <div>
             <ul>
-            <li><Link className=" hover:underline text-[14px]">Laptops</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Mobiles</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Headphones</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Tablets</Link></li>
-            <li><Link className=" hover:underline text-[14px]">Smart Watches</Link></li>
+            <li><Link to="/" className=" hover:underline text-[14px]">Laptops</Link></li>
+            <li><Link to="/" className=" hover:underline text-[14px]">Mobiles</Link></li>
+            <li><Link to="/" className=" hover:underline text-[14px]">Headphones</Link></li>
+            <li><Link to="/" className=" hover:underline text-[14px]">Tablets</Link></li>
+            <li><Link to="/" className=" hover:underline text-[14px]">Smart Watches</Link></li>
             </ul>
           </div>
         </div>

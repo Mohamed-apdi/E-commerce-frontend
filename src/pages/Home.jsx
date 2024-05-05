@@ -1,7 +1,11 @@
+import ProductCard from '../components/ProductCard';
+import BlogCard from '../components/BlogCard';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-
+import Marquee from 'react-fast-marquee';
+import SpecialProducts from '../components/SpecialProducts';
+import Meta from "../components/Meta"
 function Home() {
 
   useEffect(() => {
@@ -11,8 +15,9 @@ function Home() {
   
   return (
     <>
+    <Meta title={"E-commerce"}/>
     <section className="Home-wrapper-1">
-      <div className=" max-w-7xl mx-auto pt-6 px-20 pb-4">
+      <div className=" container mx-auto pt-6 px-20 pb-4">
         <div className="flex flex-row justify-center gap-x-4">
         <div className=" max-w-[70%]">
           <div data-aos="fade-right"  data-aos-offset="300"  data-aos-easing="ease-in-sine" className="main-banner  relative">
@@ -73,41 +78,42 @@ function Home() {
         </div>
       </div>
     </section>
+
     <section className="Home-wrapper-2 p-6">
-      <div className=" max-w-7xl mx-auto">
+      <div className=" container mx-auto">
         <div className="flex flex-row justify-center">
           <div className="w-full">
             <div className="servies flex items-center justify-between px-20">
               <div className="flex gap-4 items-center">
-                <img className=" w-7 h-5" src="/public/images/service.png" alt="servies" />
+                <img className=" w-7 h-7" src="/public/images/delivery.png" alt="servies" />
                 <div>
                   <h4 className=" text-sm font-bold">Free Shipping</h4>
                   <p className="text-[12px] text-gray-600">Form all orders over $100</p>
                 </div>
               </div>
               <div className="flex gap-4 items-center">
-                <img className=" w-7 h-6" src="/public/images/service-02.png" alt="servies" />
+                <img className=" w-7 h-7" src="/public/images/gift.png" alt="servies" />
                 <div>
                   <h4 className=" text-sm font-bold">Daily Suprise Offers</h4>
                   <p className="text-[12px] text-gray-600">Save up to 25% off</p>
                 </div>
               </div>
               <div className="flex gap-4 items-center">
-                <img className=" w-7 h-6" src="/public/images/service-03.png" alt="servies" />
+                <img className=" w-7 h-6" src="/public/images/support.png" alt="servies" />
                 <div>
                   <h4 className=" text-sm font-bold">Support 24/7</h4>
                   <p className="text-[12px] text-gray-600">shop with an expert</p>
                 </div>
               </div>
               <div className="flex gap-4 items-center">
-                <img className=" w-7 h-6" src="/public/images/service-04.png" alt="servies" />
+                <img className=" w-7 h-6" src="/public/images/discount.png" alt="servies" />
                 <div>
                   <h4 className=" text-sm font-bold">Affordable Price</h4>
                   <p className="text-[12px] text-gray-600">Get Factory direct price</p>
                 </div>
               </div>
               <div className="flex gap-4 items-center">
-                <img className=" w-7 h-5" src="/public/images/service-05.png" alt="servies" />
+                <img className=" w-7 h-5" src="/public/images/credit-card.svg" alt="servies" />
                 <div>
                   <h4 className=" text-sm font-bold">Secure Payments</h4>
                   <p className="text-[12px] text-gray-600">100% Protected Payments</p>
@@ -118,8 +124,9 @@ function Home() {
         </div>
       </div>
     </section>
+
     <section className="Home-wrapper-2  py-3">
-      <div className="max-w-7xl mx-auto px-14">
+      <div className="container mx-auto px-14">
         <div className="flex flex-row justify-center">
           <div className="w-full">
             <div data-aos="fade-up" data-aos-duration="700"
@@ -209,6 +216,159 @@ function Home() {
 
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="featured-wrapper">
+      <div className="container mx-auto">
+          <div className="w-full pl-10 mb-[-24px] py-3">
+            <h3 className='section-heading text-sm text-slate-800'>Featured Collection</h3>
+          </div>
+        <div className="flex justify-center px-10 pb-5 gap-4">
+           <ProductCard/>
+           <ProductCard/>
+           <ProductCard/>
+           <ProductCard/>
+           <ProductCard/>
+        </div>
+      </div>
+    </section>
+    <section className="famous-wrapper Home-wrapper-2 py-5">
+      <div className="container mx-auto">
+        <div className="flex justify-center gap-4">
+          <div className="col-3">
+            <div className="famous-card bg-black text-white p-4 rounded-sm relative">
+            <img src="/public/images/famous-1.png" className='w-[300px] h-[350px] pt-20' alt="img" />
+              <div className="famous-content absolute">
+              <h5 className='scroll-m-8 text-sm font-think text-gray-400'>BIG SCREEN</h5>
+              <h3 className='scroll-m-20 text-xl font-semibold tracking-tight'>Smart Watch Series 7</h3>
+              <p className='leading-7 text-xs font-thin text-gray-300'>from $399.45 or $16.25/mo. for 24/mo*</p>
+              </div>
+            </div> 
+          </div>
+
+          <div className="col-3">
+            <div className="famous-card bg-white text-black shadow-sm p-4 rounded-sm relative">
+            <img src="/public/images/famous-2.webp" className='w-[300px] h-[350px] pt-20' alt="img" />
+              <div className="famous-content absolute">
+              <h5 className='scroll-m-8 text-sm font-think text-gray-400'>STUDIO DISPLAY</h5>
+              <h3 className='scroll-m-20 text-xl font-semibold tracking-tight'>600 nits of brightness.</h3>
+              <p className='leading-7 text-xs font-thin text-gray-500'>27-inch 5k Retina display</p>
+              </div>
+            </div> 
+          </div>
+
+          <div className="col-3">
+            <div className="famous-card bg-white text-black shadow-sm p-4 rounded-sm relative">
+            <img src="/public/images/famous-3.webp" className='w-[300px] h-[350px] pt-20' alt="img" />
+              <div className="famous-content absolute">
+              <h5 className='scroll-m-8 text-sm font-think text-gray-400'>SMARTPHONES</h5>
+              <h3 className='scroll-m-20 text-xl font-semibold tracking-tight mb-2'>Smartphone 13 pro.</h3>
+              <p className='leading-4 text-xs font-thin text-gray-500'>New in Grey. from $999.00 or $41.62/mo. for 24 mo. Footnote*</p>
+              </div>
+            </div> 
+          </div>
+
+          <div className="col-3">
+            <div className="famous-card bg-white text-black shadow-sm p-4 rounded-sm relative">
+            <img src="/public/images/famous-4.webp" className='w-[300px] h-[350px] pt-20' alt="img" />
+              <div className="famous-content absolute">
+              <h5 className='scroll-m-8 text-sm font-think text-gray-400'>HOME SPEAKERS</h5>
+              <h3 className='scroll-m-20 text-xl font-semibold tracking-tight'>Room-filling sound.</h3>
+              <p className='leading-7 text-xs font-thin text-gray-500'>from $699 or $116.58/mo. for 12/mo*</p>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="special-wrapper Home-wrapper-2">
+      <div className="container mx-auto">
+      <div className="w-full pl-10 mb-[-24px] py-3">
+            <h3 className='section-heading text-sm text-slate-800'>Special Products</h3>
+          </div>
+        <div className="flex justify-center px-10 pb-5 gap-4">
+          <SpecialProducts/>
+          <SpecialProducts/>
+          <SpecialProducts/>
+        </div>
+      </div>
+    </section>
+
+    <section className="popular-wrapper">
+      <div className="container mx-auto">
+          <div className="w-full pl-10 mb-[-24px] py-3">
+            <h3 className='section-heading text-sm text-slate-800'>Our Popular Products</h3>
+          </div>
+        <div className="flex justify-center px-5 pb-5 gap-4">
+         <ProductCard/>
+         <ProductCard/>
+         <ProductCard/>
+         <ProductCard/>
+        </div>
+      </div>
+    </section>
+
+    <section className="marquee-wrapper p-5">
+      <div className="container mx-auto px-10">
+        <div className="flex flex-row justify-center">
+          <div className="w-full">
+            <div className="marquee-inner-wrpper">
+              <Marquee>
+                <div className='mx-8 w-24'>
+                  <img src="/public/images/brand-01.png" alt="brand" />
+                </div>
+
+                <div className='mx-8 w-24'>
+                  <img src="/public/images/brand-02.png" alt="brand" />
+                </div>
+
+                <div className='mx-8 w-24'>
+                  <img src="/public/images/brand-03.png" alt="brand" />
+                </div>
+
+                <div className='mx-8 w-24'>
+                  <img src="/public/images/brand-04.png" alt="brand" />
+                </div>
+
+                <div className='mx-8 w-24'>
+                  <img src="/public/images/brand-05.png" alt="brand" />
+                </div>
+
+                <div className='mx-8 w-24'>
+                  <img src="/public/images/brand-06.png" alt="brand" />
+                </div>
+                <div className='mx-8 w-24'>
+                  <img src="/public/images/brand-07.png" alt="brand" />
+                </div>
+                <div className='mx-8 w-24'>
+                  <img src="/public/images/brand-08.png" alt="brand" />
+                </div>
+              </Marquee>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="blog-wrapper">
+      <div className="container mx-auto">
+          <div className="w-full pl-10 mb-[-24px] py-3">
+            <h3 className='section-heading text-sm text-slate-800'>Our Latest Blogs</h3>
+          </div>
+        <div className="flex px-10 pb-5 gap-4">
+           <div className="w-3/12">
+           <BlogCard/>
+           </div>
+           <div className="w-3/12">
+           <BlogCard/>
+           </div>
+           <div className="w-3/12">
+           <BlogCard/>
+           </div>
+           <div className="w-3/12">
+           <BlogCard/>
+           </div>
         </div>
       </div>
     </section>
