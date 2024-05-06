@@ -7,7 +7,7 @@ function ProductCard(props) {
     <>
     <div className={`${location.pathname === "/store" ? `grid-cols-${grid}` : " col-span-1"}`}>
     
-        <Link className="product-card relative">
+        <Link to="/product/:id" className="product-card relative">
           <div className="wishlist-icon absolute">
             <Link><img src="/public/images/wish.svg" className='w-8 h-8 border-transparent  hover:bg-[#febd69]/80 inline-flex items-center rounded-full border px-2 py-0.5 text-xs font-semibold transition-colors focus:outline-none' alt="wishlist" /></Link>
           </div>

@@ -376,6 +376,10 @@ footer:not(:first-child) {
     .product-card .product-image img {
       object-fit: contain;
     }
+    .custom-stars .react-stars {
+      font-size: 20px; /* Adjust the size as needed */
+  }
+  
 /* Product card end  */
 
 
