@@ -13,7 +13,7 @@ function ProductCard(props) {
           </div>
             <div className="product-image">
                 <img className=" max-w-full h-auto" src="/public/images/tab.jpg" alt="" />
-                <img className=" max-w-full h-auto" src="/public/images/tab2.jpg" alt="" />
+                <img className=" max-w-full h-auto" src="/public/images/tab3.jpg" alt="" />
             </div>
             <div className="product-detailes">
                 <h5>Havels</h5>
@@ -21,7 +21,7 @@ function ProductCard(props) {
                 <ReactStars
                   count={5}
                   size={24}
-                  value="3"
+                  value="1"
                   edit="false"
                   activeColor="#ffd700"
                 />

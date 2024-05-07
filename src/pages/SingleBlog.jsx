@@ -58,7 +58,7 @@ function SingleBlog() {
                                     </div>
                                 </div>
                                 <div className="flex flex-col space-y-1.5">
-                                    <Textarea className="bg-[#e1e1e1] text-black" type="email"  placeholder="Comment*" />
+                                    <Textarea className="bg-[#e1e1e1] text-black" type="text"  placeholder="Comment*" />
                                     </div>
                                 </form>
                             </CardContent>
