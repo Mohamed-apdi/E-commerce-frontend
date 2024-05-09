@@ -80,7 +80,6 @@ const SingleProduct = () => {
                             activeColor="#ffd700"
                             /> <label className='text-sm text-muted-foreground'>(3 reviews)</label>
                             </div>
-                            {/* i need when click this go to write a review  */}
                             <button onClick={toggleReview} className="underline text-muted-foreground text-sm">
                                Write a review
                             </button>
