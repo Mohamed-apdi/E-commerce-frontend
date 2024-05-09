@@ -510,7 +510,33 @@ footer:not(:first-child) {
   background-color:#232f3e;
 }
 
-
 /* Compare-Product-wrapper  end here  */
 
+/* single product open */
+.main-product-image {
+  background-color: white;
+  border-radius: 8px;
+}
+.main-product-image > div{
+ padding: 10px;
+}
+.main-product-image img{
+  width: 100% !important;
+  height: 400px !important;
+  object-fit: cover;
+  cursor: move;
+}
+.onther-image-product{
+  padding: 20px;
+  background-color: white;
+}
+.onther-image-product > div{
+  border: 1px solid rgba(0,0,0,0.25);
+  padding: 10px;
+  width: 48%;
+  
+}
+
+
+/* single product close */
 
