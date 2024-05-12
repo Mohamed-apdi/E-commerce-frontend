@@ -2,14 +2,14 @@ import React from 'react'
 import Meta from "../components/Meta"
 import BreadCrumb from "../components/BreadCrumb"
 import BlogCard from '../components/BlogCard'
+import Container from '../components/Container'
 function Blog() {
   return (
     <>
     <Meta title={"Blogs"}/>
     <BreadCrumb title="Blogs"/>
-    <div className="blog-wrapper Home-wrapper-2 py-5">
-        <div className="container">
-            <div className="flex gap-4">
+    <Container class1="blog-wrapper Home-wrapper-2 py-5">
+    <div className="flex gap-4">
                 {/* side-bar blog  */}
                 <div className="w-3/12">
                     <div className="filter-card mb-3 shadow-md">
@@ -35,8 +35,7 @@ function Blog() {
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+    </Container>
     </>
   )
 }

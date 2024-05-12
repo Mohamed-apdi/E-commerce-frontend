@@ -9,7 +9,6 @@ import CompareProduct from "./pages/CompareProduct"
 import Wishlist from "./pages/Wishlist"
 import Login from "./pages/Login"
 import Cart from "./pages/Cart"
-import Register from "./pages/SignUp"
 import SignUp from "./pages/SignUp"
 import ForgetPassword from "./pages/ForgetPassword"
 import SingleBlog from "./pages/SingleBlog"
@@ -19,6 +18,8 @@ import ShippingPolicy from "./pages/ShippingPolicy"
 import TermsConditions from "./pages/TermsAndConditions"
 import FAQ from "./pages/FAQ"
 import SingleProduct from "./pages/SingleProduct"
+import Checkout from "./pages/Checkout"
+import Shipping from "./pages/Shipping"
 function App() {
   return (
     <>
@@ -28,7 +29,7 @@ function App() {
         <Route index element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
-        <Route path="/store" element={<OurStore/>}/>
+        <Route path="/product" element={<OurStore/>}/>
         <Route path="/product/:id" element={<SingleProduct/>}/>
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/blog/:id" element={<SingleBlog/>}/>
@@ -44,6 +45,8 @@ function App() {
         <Route path="/terms-conditions" element={<TermsConditions/>}/>
         <Route path="/faq" element={<FAQ/>}/>
       </Route>
+      <Route path="/checkout" element={<Checkout/>}/>
+      <Route path="/shipping" element={<Shipping/>}/>
     </Routes>
     </BrowserRouter>
     </>

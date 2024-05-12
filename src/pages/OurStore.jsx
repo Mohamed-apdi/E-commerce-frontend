@@ -17,6 +17,7 @@ import {
 import { useState } from "react";
 import ProductCard from "../components/ProductCard";
 import Color from "../components/Color";
+import Container from "../components/Container";
 
 
 
@@ -28,9 +29,8 @@ function OurStore() {
     <>
     <Meta title={"Our Store"}/>
     <BreadCrumb title="Our Store"/>
-    <div className="store-wrapper py-5 Home-wrapper-2">
-        <div className="container">
-            <div className="flex gap-4">
+    <Container class1="store-wrapper py-5 Home-wrapper-2">
+      <div className="flex gap-4">
                 {/* side bar store  */}
                 <div className=" w-3/12">
                   <div className="filter-card mb-3 shadow-md">
@@ -253,8 +253,7 @@ function OurStore() {
 
                 </div>
             </div>
-        </div>
-    </div>
+    </Container>
     </>
   )
 }

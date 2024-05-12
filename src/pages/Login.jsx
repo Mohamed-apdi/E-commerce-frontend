@@ -1,56 +1,70 @@
 import React from 'react'
 import { Button } from "../components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../components/ui/card"
 import { Input } from "../components/ui/input"
 import { Label } from "../components/ui/label"
 import { Link } from 'react-router-dom'
 import Meta from '../components/Meta'
 import BreadCrumb from '../components/BreadCrumb'
-
+import Container from '../components/Container'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "../components/ui/card"
 function Login() {
   return (
     
     <>
     <Meta title="Login"/>
     <BreadCrumb title="Login"/>
-      <div className="login-wrapper py-5 Home-wrapper-2">
-        <div className="container">
-          <div className="flex justify-center items-center">
-          <Card className="w-[350px]">
-            <CardHeader>
-              <CardTitle>Login</CardTitle>
-              <CardDescription>Welcme Back</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <form>
-                <div className="grid w-full items-center gap-4">
-                  <div className="flex flex-col space-y-1.5">
-                    <Label htmlFor="Email">Email</Label>
-                    <Input type="email" id="Email" placeholder="email" />
-                  </div>
-                  <div className="flex flex-col space-y-1.5">
-                    <Label htmlFor="password">Passwprd</Label>
-                    <Input type="password" id="password" placeholder="password" />
-                  </div>
-                  <Link to="/forget-password" className="text-sm mt-[-8px] font-semibold hover:underline">forget password?</Link>
-                </div>
-              </form>
-            </CardContent>
-            <CardFooter className="flex gap-3 justify-center">
-              <Button>Login</Button>
-              <Button className="bg-[#febd69] hover:bg-[#febd69]/80 text-black"><Link to="/sign-up">Sign up</Link></Button>
-            </CardFooter>
-          </Card>
+    <Container class1="login-wrapper py-5 Home-wrapper-2">
+       
+        <Card className="mx-auto max-w-sm">
+          <CardHeader>
+            <CardTitle className="text-xl">Login</CardTitle>
+            <CardDescription>
+            Enter your email below to login to your account
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="grid gap-4">
+              <div className="grid gap-2 shadow-sm">
+                <Label htmlFor="email">Email</Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div className="grid gap-2">
+              <div className="flex items-center">
+                <Label htmlFor="password">Password</Label>
+                <Link
+                  href="/forgot-password"
+                  className="ml-auto inline-block text-sm underline"
+                >
+                  Forgot your password?
+                </Link>
+              </div>
+              <Input id="password" type="password" required />
+            </div>
+              <Button type="submit" className="w-full">
+              Login
+              </Button>
+            </div>
+            <div className="mt-4 text-center text-sm">
+            Don&apos;t have an account?{" "}
+            <Link to="/sign-up" className="underline">
+              Sign up
+            </Link>
           </div>
-        </div>
-      </div>
+          </CardContent>
+        </Card>
+    </Container>
+
     </>
   )
 }

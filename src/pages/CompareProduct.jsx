@@ -3,14 +3,14 @@ import Meta from "../components/Meta"
 import BreadCrumb from "../components/BreadCrumb"
 import { Separator } from '../components/ui/separator'
 import Color from '../components/Color'
+import Container from '../components/Container'
 function CompareProduct() {
   return (
     <>
     <Meta title={"Compare"}/>
     <BreadCrumb title="Compare"/>
-    <div className="compare-product-wrapper py-5 Home-wrapper-2">
-        <div className="container mx-auto">
-            <div className="grid grid-cols-4 gap-3">
+    <Container class1="compare-product-wrapper py-5 Home-wrapper-2">
+        <div className="grid grid-cols-4 gap-3">
                 <div className="col-span-1 ">
                     <div className="compare-product-card relative ">
                             <img src="/public/images/cross.svg" className='absolute w-8 h-8 border-transparent text-secondary-foreground hover:bg-secondary/80 inline-flex items-center rounded-full border px-2 py-0.5 text-xs font-semibold transition-colors focus:outline-none top-3 cross-btn cursor-pointer right-4' alt="cross" />
@@ -262,8 +262,7 @@ function CompareProduct() {
                  
                 </div>
             </div>
-        </div>
-    </div>
+    </Container>
     </>
   )
 }

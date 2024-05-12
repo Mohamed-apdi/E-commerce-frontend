@@ -4,6 +4,7 @@ import { Input } from "../components/ui/input"
 import { Textarea } from "../components/ui/textarea"
 import { Button } from "../components/ui/button"
 import { Home, Info, Mail, Phone, Send } from "lucide-react"
+import Container from "../components/Container"
 
 
 
@@ -12,9 +13,9 @@ function Contact() {
     <>
     <Meta title={"Contact us"}/>
     <BreadCrumb title="Contact us"/>
-    <div className="contact-wrapperr py-5 Home-wrapper-2">
-      <div className="container">
-        <div className="flex flex-col">
+
+    <Container class1="contact-wrapperr py-5 Home-wrapper-2">
+      <div className="flex flex-col">
            <div className="w-full">
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127591.73873235245!2d45.22426164447214!3d2.0591986721644533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d58425955ce6b53%3A0xbb20eaaa52cc59d9!2sMogadishu!5e0!3m2!1sen!2sso!4v1714665546887!5m2!1sen!2sso" width="600" height="250" className="border-0 w-full" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
            </div>
@@ -46,8 +47,7 @@ function Contact() {
               </div>
            </div>
         </div>
-      </div>
-    </div>
+    </Container>
     </>
   )
 }

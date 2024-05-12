@@ -1,3 +1,4 @@
+import Container from '../components/Container'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
 import React from 'react'
@@ -7,9 +8,9 @@ function Wishlist() {
     <>
     <Meta title={"Wishlist"}/>
     <BreadCrumb title="Wishlist"/>
-    <div className="wishlist-wrapper Home-wrapper-2 py-5">
-      <div className="container">
-        <div className="grid grid-cols-4 gap-4">
+
+    <Container class1="wishlist-wrapper Home-wrapper-2 py-5">
+      <div className="grid grid-cols-4 gap-4">
 
         <div className="col-span-1 ">
           <div className="compare-product-card relative ">
@@ -62,10 +63,9 @@ function Wishlist() {
               <h5 className="text-md font-semibold mt-3">$100.00</h5>
           </div>    
         </div>
-        
-        </div>
+
       </div>
-    </div>
+    </Container>
     </>
   )
 }

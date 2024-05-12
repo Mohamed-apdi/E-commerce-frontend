@@ -27,6 +27,7 @@ import {
   } from "../components/ui/accordion"
   import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { NavLink } from 'react-router-dom';
+import Container from '../components/Container';
 
 const SingleProduct = () => {
     const [writeReview, setWriteReview] = useState(false);
@@ -48,9 +49,9 @@ const SingleProduct = () => {
     <>
     <Meta title="Product Name"/>
     <BreadCrumb title="Product Name"/>
-    <div className="main-product-wrapper py-5 Home-wrapper-2">
-        <div className="container">
-            <div className="flex space-x-4">
+ 
+    <Container class1="main-product-wrapper py-5 Home-wrapper-2">
+        <div className="flex space-x-4">
                 <div className="w-6/12 rounded-md">
                     <div className="main-product-image">
                     <div className='image-zoom'>
@@ -80,10 +81,7 @@ const SingleProduct = () => {
                             activeColor="#ffd700"
                             /> <label className='text-sm text-muted-foreground'>(3 reviews)</label>
                             </div>
-                            <button onClick={toggleReview} className="underline text-muted-foreground text-sm">
-                               Write a review
-                            </button>
-                            <Separator/>
+                            <Separator className="mt-2"/>
                             <div className='flex flex-col gap-3 mt-4'>
                             <div className='flex items-center gap-1'>
                                 <p className='font-bold'>Type:</p>
@@ -168,12 +166,6 @@ const SingleProduct = () => {
                                         Free shipping and returns available on all orders! we ship all  US domestic order within 5-10 business days!
                                         </AccordionContent>
                                     </AccordionItem>
-                                    <AccordionItem value="item-2">
-                                        <AccordionTrigger><p><Fence className=" inline-block mr-[2px] w-4"/>  Materials</p></AccordionTrigger>
-                                        <AccordionContent>
-                                        Running shoes cushions you stride with soft foam to keep you runing in comfort. Lightwieght knit material wraps your foot in breathable support. while a minimalist design fits in just about anywhere your day task you.
-                                        </AccordionContent>
-                                    </AccordionItem>
                                     <AccordionItem value="item-4">
                                         <AccordionTrigger><p><Heart className=" inline-block mr-[2px] w-4"/> Care instructions</p></AccordionTrigger>
                                         <AccordionContent>
@@ -201,8 +193,8 @@ const SingleProduct = () => {
                     </div>
                 </div>
             </div>
-        </div>
-        {/* description */}
+
+             {/* description */}
         <div className="description-wrapper py-5 Home-wrapper-2">
             <div className="container">
                 <div className="flex">
@@ -307,7 +299,7 @@ const SingleProduct = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </Container>
     </>
   )
 }

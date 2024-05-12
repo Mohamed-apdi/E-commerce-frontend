@@ -1,3 +1,4 @@
+import Container from '../components/Container'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
 import React from 'react'
@@ -8,9 +9,8 @@ function RefundPolicy() {
     <Meta title="RefundPolicy"/>
     <BreadCrumb title="Refund Policy"/>
 
-    <div className="refund-wrapper py-5 Home-wrapper-2">
-        <div className="container">
-            <div className="w-8/12 mx-auto">
+    <Container class1="refund-wrapper py-5 Home-wrapper-2">
+        <div className="w-8/12 mx-auto">
         <h1 className="scroll-m-20 text-2xl mb-5 text-center font-semibold tracking-tight">Refund Policy</h1>
         <div className="flex flex-col gap-5">
         <div className="">
@@ -51,9 +51,8 @@ function RefundPolicy() {
             <p className="leading-7 [&:not(:first-child)]:mt-6">If you have any questions about our refund policy, or if you need assistance with a return, please contact us at <a href="mailto:maxamedcabdifitaax33@gmail.com" className='underline cursor-pointer'>maxamedcabdifitaax33@gmail.com</a>.</p>
         </div>
         </div>
-        </div>
-        </div>
     </div>
+    </Container>
     </>
   )
 }

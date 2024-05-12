@@ -146,7 +146,7 @@ function Header() {
             <div className='menu-links'>
               <div className="flex items-center gap-5">
                 <Link to="">Home</Link>
-                <Link to="/store">Our Store</Link>
+                <Link to="/product">Our Store</Link>
                 <Link to="/blog">Blogs</Link>
                 <Link to="/contact">Contact</Link>
               </div>

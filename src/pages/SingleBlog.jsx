@@ -9,21 +9,22 @@ import { Button } from "../components/ui/button"
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "../components/ui/card"
 import { Input } from "../components/ui/input"
 import { Textarea } from '../components/ui/textarea'
+import Container from '../components/Container'
 function SingleBlog() {
   return (
     <>
+
     <Meta title="Dynamic blog name"/>
     <BreadCrumb title="Dynamic blog name"/>
-    <div className="blog-wrapper Home-wrapper-2 py-5">
-        <div className="container">
-            <div className="flex gap-4">
+    
+    <Container class1="blog-wrapper Home-wrapper-2 py-5">
+        <div className="flex gap-4">
                 <div className="w-full">
                     <div className="single-blog-card mx-auto w-8/12">
                         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">A Beautiful Sunday Morning Renaissance</h3>
@@ -69,8 +70,8 @@ function SingleBlog() {
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+    </Container>
+
     </>
   )
 }

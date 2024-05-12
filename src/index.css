@@ -83,6 +83,7 @@
 
 body{
     font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
 }
 
 a{
@@ -537,6 +538,26 @@ footer:not(:first-child) {
   
 }
 
-
 /* single product close */
+
+/* cart wrapper open here  */
+.cart-col-1 {
+  width: 48%;
+}
+.cart-col-1 p, h1 {
+  font-size: 14px;
+}
+.cart-col-2{
+  width: 10%;
+}
+.cart-col-3 {
+  width: 15%;
+}
+.cart-col-4 {
+  width: 15%;
+}
+.cart-col-4 p {
+  font-size: 14px;
+}
+/* cart wrapper end here  */
 

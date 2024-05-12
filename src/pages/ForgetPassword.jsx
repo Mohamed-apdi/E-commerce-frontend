@@ -13,37 +13,36 @@ import {
 import { Input } from "../components/ui/input"
 import { Label } from "../components/ui/label"
 import { Link } from 'react-router-dom'
+import Container from '../components/Container'
 function ForgetPassword() {
   return (
     <>
     <Meta title="forget-password"/>
     <BreadCrumb title="Forget Password"/>
-    <div className="forget-wrapper py-5 Home-wrapper-2">
-        <div className="container">
-          <div className="flex justify-center items-center">
-          <Card className="w-[400px]">
-            <CardHeader>
-              <CardTitle className="text-center">Reset Your Password</CardTitle>
-              <CardDescription>We will send you an email to reset your password</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <form>
-                <div className="grid w-full items-center gap-4">
-                  <div className="flex flex-col space-y-1.5">
-                    <Label htmlFor="Email">Email</Label>
-                    <Input type="email" id="Email" placeholder="email" />
+    <Container class1="forget-wrapper py-5 Home-wrapper-2">
+       <div className="flex justify-center items-center">
+            <Card className="w-[400px]">
+              <CardHeader>
+                <CardTitle className="text-center">Reset Your Password</CardTitle>
+                <CardDescription>We will send you an email to reset your password</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <form>
+                  <div className="grid w-full items-center gap-4">
+                    <div className="flex flex-col space-y-1.5">
+                      <Label htmlFor="Email">Email</Label>
+                      <Input type="email" id="Email" placeholder="email" />
+                    </div>
                   </div>
-                </div>
-              </form>
-            </CardContent>
-            <CardFooter className="flex  gap-3 justify-center">
-              <Button variant="secondary"><Link to="/login">Cancel</Link></Button>
-              <Button ><Link to="/sign-up">Submit</Link></Button>
-            </CardFooter>
-          </Card>
+                </form>
+              </CardContent>
+              <CardFooter className="flex  gap-3 justify-center">
+                <Button variant="secondary"><Link to="/login">Cancel</Link></Button>
+                <Button ><Link to="/sign-up">Submit</Link></Button>
+              </CardFooter>
+            </Card>
           </div>
-        </div>
-      </div>
+    </Container>
     </>
   )
 }
