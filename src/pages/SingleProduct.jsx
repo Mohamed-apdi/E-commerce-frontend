@@ -3,7 +3,7 @@ import Meta from '../components/Meta'
 import React from 'react'
 import ReactStars from "react-rating-stars-component";
 import { Separator } from "../components/ui/separator"
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { Button } from "../components/ui/button"
 import { Label } from "../components/ui/label"
 import { Textarea } from '../components/ui/textarea'
@@ -16,7 +16,7 @@ import {
 } from "../components/ui/card"
 import HoverZoomImage from '../components/HoverZoomImage';
 import Color from '../components/Color';
-import {  Fence, Heart, Link, Ruler, Truck } from 'lucide-react';
+import {  Heart, Link, Truck } from 'lucide-react';
 import { IoGitCompare } from "react-icons/io5";
 import { Badge } from '../components/ui/badge';
 import {
@@ -26,8 +26,8 @@ import {
     AccordionTrigger,
   } from "../components/ui/accordion"
   import {CopyToClipboard} from 'react-copy-to-clipboard';
-import { NavLink } from 'react-router-dom';
 import Container from '../components/Container';
+import ProductCard from '../components/ProductCard';
 
 const SingleProduct = () => {
     const [writeReview, setWriteReview] = useState(false);
@@ -47,7 +47,7 @@ const SingleProduct = () => {
     
   return (
     <>
-    <Meta title="Product Name"/>
+    <Meta title="ProductName"/>
     <BreadCrumb title="Product Name"/>
  
     <Container class1="main-product-wrapper py-5 Home-wrapper-2">
@@ -293,7 +293,9 @@ const SingleProduct = () => {
                 <div className="flex">
                     <div className="w-full">
                      <h1 className="scroll-m-20 text-xl font-semibold tracking-tight mb-2">You May Also Like</h1>
-                        <div className="flex gap-3  bg-white p-3 rounded-sm">
+                        <div className="flex gap-3">
+                            <ProductCard/>
+                            <ProductCard/>
                         </div>
                     </div>
                 </div>

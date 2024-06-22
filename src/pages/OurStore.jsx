@@ -35,7 +35,7 @@ function OurStore() {
                 <div className=" w-3/12">
                   <div className="filter-card mb-3 shadow-md">
                     <h3 className="scroll-m-20 text-1xl font-semibold tracking-tight">
-                      Shop By Categories
+                    Shop By Categories
                     </h3>
                     <div>
                       <ul className="my-6 ml-6 [&>li]:mt-2">
@@ -184,8 +184,8 @@ function OurStore() {
                           <ReactStars
                             count={5}
                             size={24}
-                            value="4"
-                            edit="false"
+                            value={4} // Make sure this is also correctly typed; it should be a number.
+                            edit={false} // Directly use the boolean value `false` instead of a string.
                             activeColor="#ffd700"
                           />
                           <p className="text-sm font-semibold">$45.00</p>
@@ -199,8 +199,8 @@ function OurStore() {
                           <ReactStars
                             count={5}
                             size={24}
-                            value="4"
-                            edit="false"
+                            value={4}
+                            edit={false}
                             activeColor="#ffd700"
                           />
                           <p className="text-sm font-semibold">$45.00</p>

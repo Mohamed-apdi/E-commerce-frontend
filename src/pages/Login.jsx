@@ -43,7 +43,7 @@ function Login() {
               <div className="flex items-center">
                 <Label htmlFor="password">Password</Label>
                 <Link
-                  href="/forgot-password"
+                  to="/forget-password"
                   className="ml-auto inline-block text-sm underline"
                 >
                   Forgot your password?
@@ -55,11 +55,14 @@ function Login() {
               Login
               </Button>
             </div>
-            <div className="mt-4 text-center text-sm">
+            <div className="mt-2 text-center text-sm">
             Don&apos;t have an account?{" "}
             <Link to="/sign-up" className="underline">
               Sign up
             </Link>
+          </div>
+          <div className="mt-2 text-center text-xs">
+            By creating an account you agree with our <Link to="/terms-conditions" className="underline">Terms & Conditions</Link>, <Link to="/privacy-policy" className="underline">Privacy Policy</Link>,
           </div>
           </CardContent>
         </Card>

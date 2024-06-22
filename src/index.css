@@ -436,6 +436,7 @@ footer:not(:first-child) {
 }
 .grid-1 .product-card .product-image {
   width: 200px;
+  align-items: center;
 }
 .grid-1 .product-card .product-detailes {
   padding: 20px 0;

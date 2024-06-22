@@ -20,11 +20,13 @@
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slider": "^1.1.2",
     "@radix-ui/react-slot": "^1.0.2",
-    "@reduxjs/toolkit": "^2.2.2",
+    "@reduxjs/toolkit": "^2.2.5",
     "aos": "^2.3.4",
+    "axios": "^1.7.2",
     "basicons": "^1.0.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "formik": "^2.4.6",
     "lucide-react": "^0.363.0",
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
@@ -38,7 +40,8 @@
     "react-router-dom": "^6.22.3",
     "redux": "^5.0.1",
     "tailwind-merge": "^2.2.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

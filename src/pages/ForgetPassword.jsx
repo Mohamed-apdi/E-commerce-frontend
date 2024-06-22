@@ -37,8 +37,8 @@ function ForgetPassword() {
                 </form>
               </CardContent>
               <CardFooter className="flex  gap-3 justify-center">
-                <Button variant="secondary"><Link to="/login">Cancel</Link></Button>
-                <Button ><Link to="/sign-up">Submit</Link></Button>
+                <Button className="border-2" variant="secondary"><Link to="/login">Cancel</Link></Button>
+                <Button ><Link to="/sign-up">Send</Link></Button>
               </CardFooter>
             </Card>
           </div>

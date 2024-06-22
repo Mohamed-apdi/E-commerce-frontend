@@ -7,25 +7,10 @@ import {
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
-  DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from "../components/ui/dropdown-menu"
 import {
-  CirclePlus,
-  Cloud,
-  CreditCard,
-  Github,
-  Keyboard,
-  LifeBuoy,
-  LogOut,
-  Mail,
-  MessageSquare,
-  Plus,
-  PlusCircle,
-  Settings,
   User,
-  UserPlus,
-  Users,
 } from "lucide-react"
 import { FaCaretDown } from "react-icons/fa";
 
