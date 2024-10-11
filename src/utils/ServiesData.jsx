@@ -15,11 +15,6 @@ export const  servies = [
         "icon":"/public/images/support.png"
     },
     {
-        "title":"Affordable Price",
-        "tagline":"Get Factory direct price",
-        "icon":"/public/images/discount.png"
-    },
-    {
         "title":"Secure Payments",
         "tagline":"100% Protected Payments",
         "icon":"/public/images/credit-card.svg"
